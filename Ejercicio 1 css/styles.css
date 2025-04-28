@@ -1,0 +1,28 @@
+.imperio {
+    background-color: red;
+  }
+
+  .rebeldes {
+    background-color: blue;
+  }
+
+  #darth {
+    font-size: 24px; 
+  }
+  
+  #luke {
+    font-style: italic; 
+  }
+
+  .soldado {
+    border: 2px dashed black; 
+    letter-spacing: 2px
+  }
+
+  .apoyo {
+    text-align: center; 
+  }
+
+  .nave {
+    text-transform: uppercase;
+  }

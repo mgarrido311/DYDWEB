@@ -16,14 +16,14 @@
   }
   
   
-/* MENU, esto se replica en todas las hojas pero no se porque se ve diferente en las distintas paginas*/
+/* MENU, esto se replica en todas las hojas*/
 nav {
-  background-color: #7C2D12 ; /*color de fondo*/
-  text-align: center; /*centra horizontalmente*/
-  align-items: center; /*centra verticalmente*/
-  padding: 10px ; /*para que no este pegado al borde el textp*/
-  border-radius: 10px; /*para redondear el menú*/
-}
+    background-color: #7C2D12 ; /*color de fondo*/
+    text-align: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    padding: 10px ; /*para que no este pegado al borde el textp*/
+    border-radius: 10px; /*para redondear el menú*/
+  }
   
   nav ul {
     list-style: none;

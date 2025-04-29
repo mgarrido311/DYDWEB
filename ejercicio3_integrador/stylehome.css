@@ -15,15 +15,69 @@
     padding: 05px;
   }
   
-  /* MENU, esto se replica en todas las hojas*/
-  nav {
+/* MENU, esto se replica en todas las hojas*/
+nav {
     background-color: #7C2D12 ; /*color de fondo*/
+    text-align: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    padding: 10px ; /*para que no este pegado al borde el textp*/
+    border-radius: 10px; /*para redondear el menú*/
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /*tabla de materias, esto chequear si tenia que estar acá o en materias*/
+  table{
+    margin: 0 auto;
     text-align: center; /*centra horizontalmente*/
     align-items: center; /*centra verticalmente*/
     padding: 5px ; /*para que no este pegado al borde el textp*/
     border-radius: 10px; /*para redondear el menú*/
+}
+th {
+    padding: 10px; /* para que tenga espacio dentro de la celda*/
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid #ccc;       /* Bordes visibles */
+  }
+td {
+    padding: 10px; /* para que tenga espacio dentro de la celda*/
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid #ccc;       /* Bordes visibles */
+  }
+
+/*Encabezados*/
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #7C2D12;
   }
   
+  h2, h3 {
+    color: #7C2D12;
+    margin: 20px 0 10px;
+  }
+
   /* parte responsive, replicar en todas las hojas*/
   @media (max-width: 768px) {
     nav ul {

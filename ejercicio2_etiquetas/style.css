@@ -11,7 +11,6 @@
   }
   
   header, footer {
-    background-color: #ddd;
     padding: 10px;
     text-align: center;
   }
@@ -48,16 +47,19 @@ nav {
   
   /*Encabezados*/
   header h1 {
+        padding: 10px ; /*para que no este pegado al borde el textp*/
+     border-radius: 10px; /*para redondear el menú*/
       text-align: center;
       margin-bottom: 10px;
       color: #7C2D12;
+      background-color: #f6e0e0cf;
     }
     
     h2, h3 {
       color: #7C2D12;
       margin: 20px 0 10px;
     }
-    
+/* CSS Grid*/
   main {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -67,7 +69,7 @@ nav {
   }
   
   section {
-    background-color: #eee;
+    background-color: #f6e0e0cf;
     padding: 15px;
     border-radius: 8px;
   }
@@ -88,17 +90,24 @@ nav {
   }
   
   footer {
-    background-color: #bbb;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+    background-color: #7C2D12 ; /*color de fondo*/
+    color: #f6e0e0cf;
+    border-radius: 10px; /*para redondear el menú*/
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    main {
-      display: flex;
+
+/* parte responsive, replicar en todas las hojas*/
+@media (max-width: 768px) {
+    nav ul {
       flex-direction: column;
+      align-items: center;
+    }
+  
+    table, form {
+      width: 100%;
     }
   }
   

@@ -1,0 +1,67 @@
+/*esta parte no hace falta creo porque no tengo nada suelto en body pero por las dudas*/
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; /*borro los márgenes por defecto que trae el navegador */
+    padding: 20px;
+    background-color: #f6e0e0cf; /*sigo con la misma estética de los otros archivos*/
+    text-align: center; 
+}
+
+/* encabezado*/
+h1 {
+    margin-bottom: 30px; 
+    color: #7C2D12; 
+}
+
+/*fotos*/
+
+.galeria {
+    display: grid; /* grid para acomodar las imágenes tipo grilla */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*xa que se acomoden solas según el espacio */
+    gap: 20px; /*para que no queden superpuestas*/
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+/* esta parte comentar bien al final porque no la termine de entender */
+/*cada foto es una tarjeta*/
+.card {
+    position: relative; /*para poner cosas arriba de la foto */
+    overflow: hidden; /*si overflow lo esconde, si pasa el tamaño de la tarjeta*/
+    border-radius: 8px; /*esto es lo del borde redondeado que use en el menu*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* chat gpt me recomendo que le agregue esto para una sombra*/
+}
+
+/*la foto adentro de la tarjeta, no tiene mucha magia esta parte*/
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/*esta parte es el texto*/
+.card .texto {
+    position: absolute; /*pongo el texto sobre la foto*/
+    bottom: 0; /*bottom de la tarjeta */
+    left: 0; /*bien a la izquiersa*/
+    width: 100%;
+    padding: 15px;
+    color: white; 
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); /*en la foto que subió la profe estaba como mas oscurito abajo, le pregunte a chatgpt y me dijo que podia hacerle esto que es como un degradado para que este mas oscuro*/
+    border-radius: 0 0 8px 8px; 
+    text-align: left; 
+}
+
+/* la etiqueta chiquita*/
+.etiqueta {
+    background-color: #7C2D12; 
+    color: white;
+    font-size: 0.75rem; 
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+}

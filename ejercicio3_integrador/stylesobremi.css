@@ -57,6 +57,16 @@ header h1 {
     color: #7C2D12;
     margin: 20px 0 10px;
   }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #7C2D12;
+    color: #f6e0e0cf;
+    border-radius: 10px;
+  }
   
 /* parte responsive, replicar en todas las hojas*/
 @media (max-width: 768px) {

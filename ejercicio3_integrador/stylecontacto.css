@@ -21,7 +21,7 @@ nav {
     background-color: #7C2D12 ; /*color de fondo*/
     text-align: center; /*centra horizontalmente*/
     align-items: center; /*centra verticalmente*/
-    padding: 10px ; /*para que no este pegado al borde el textp*/
+    padding: 5px ; /*para que no este pegado al borde el textp*/
     border-radius: 10px; /*para redondear el menú*/
   }
   

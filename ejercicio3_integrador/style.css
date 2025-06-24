@@ -133,3 +133,39 @@ footer {
   margin-top: 15px;
   font-weight: bold;
 }
+
+/* esto es para lo de claro oscuro*/
+
+body.modo-claro {
+  background-color: #f6e0e0cf;
+  color: #7C2D12;
+}
+
+body.modo-oscuro {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+nav.modo-oscuro {
+  background-color: #333;
+}
+
+footer.modo-oscuro {
+  background-color: #333;
+  color: #ccc;
+}
+
+.modo-boton {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7C2D12;
+  color: white;
+  cursor: pointer;
+}
+
+.modo-boton:hover {
+  background-color: #a3471b;
+}
+

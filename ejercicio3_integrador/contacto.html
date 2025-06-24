@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Contacto - pagina 5</title>
-        <link rel="stylesheet" href="stylecontacto.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-        <header>
+    <body>
+    <header>
         <h1>Contacto</h1>
     </header>
     <h2>Menú</h2>
@@ -17,13 +18,25 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-  <h1>Formulario de contacto</h1>
-  <form>
+ 
+   <h2>Formulario de contacto</h2>
+
+  <form id="Formcontacto">
     <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre"><br><br>
+    <input type="text" id="nombre" class="form-input" required><br><br>
+
     <label for="email">Correo electrónico:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-    <button type="submit">Enviar</button>
+    <input type="text" id="email" class="form-input"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" class="form-input" rows="5" ></textarea><br><br>
+
+    <button type="submit" class="form-button">Enviar</button>
   </form>
+
+  <div id="respuestamensaje"></div>
+
   <footer>Hecho por Milagros Garrido</footer>
+  <script src="contacto.js"></script>
+  </body>
 </html>

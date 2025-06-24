@@ -1,0 +1,135 @@
+/* Reset basico, esto lo saque de una b¿pagina pero creo que no es necesario */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body, esto se replica en todas las hojas*/
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6e0e0cf; /*antes de entregar chequear que el fondo quede bien porque lo vas a usar para todas las paginas de este ejercicio*/
+    color: #7C2D12;
+    padding: 05px;
+  }
+  
+/* MENU*/
+nav {
+    background-color: #7C2D12 ; /*color de fondo*/
+    text-align: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    padding: 10px ; /*para que no este pegado al borde el textp*/
+    border-radius: 10px; /*para redondear el menú*/
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /*tabla de materias, esto chequear si tenia que estar acá o en materias*/
+  table{
+    margin: 0 auto;
+    text-align: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    padding: 5px ; /*para que no este pegado al borde el textp*/
+    border-radius: 10px; /*para redondear el menú*/
+}
+th {
+    padding: 10px; /* para que tenga espacio dentro de la celda*/
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid #ccc;       /* Bordes visibles */
+  }
+td {
+    padding: 10px; /* para que tenga espacio dentro de la celda*/
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid #ccc;       /* Bordes visibles */
+  }
+
+/*Encabezados*/
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #7C2D12;
+  }
+  
+  h2, h3 {
+    color: #7C2D12;
+    margin: 20px 0 10px;
+  }
+
+  /* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #7C2D12;
+  color: #f6e0e0cf;
+  border-radius: 10px;
+}
+
+  /* parte responsive, replicar en todas las hojas*/
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table, form {
+      width: 100%;
+    }
+  }
+
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #7C2D12;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6600;
+  background-color: #fff0e6;
+}
+
+.form-button {
+  background-color: #7C2D12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #a3471b;
+}
+
+#responseMessage {
+  margin-top: 15px;
+  font-weight: bold;
+}

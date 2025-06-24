@@ -1,83 +1,77 @@
-/* Reset basico, esto lo saque de una b¿pagina pero creo que no es necesario */
+/* Reset basico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* body, esto se replica en todas las hojas*/
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f6e0e0cf; /*antes de entregar chequear que el fondo quede bien porque lo vas a usar para todas las paginas de este ejercicio*/
-    color: #7C2D12;
-    padding: 05px;
-  }
-  
-/* MENU*/
-nav {
-    background-color: #7C2D12 ; /*color de fondo*/
-    text-align: center; /*centra horizontalmente*/
-    align-items: center; /*centra verticalmente*/
-    padding: 10px ; /*para que no este pegado al borde el textp*/
-    border-radius: 10px; /*para redondear el menú*/
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /*tabla de materias, esto chequear si tenia que estar acá o en materias*/
-  table{
-    margin: 0 auto;
-    text-align: center; /*centra horizontalmente*/
-    align-items: center; /*centra verticalmente*/
-    padding: 5px ; /*para que no este pegado al borde el textp*/
-    border-radius: 10px; /*para redondear el menú*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-th {
-    padding: 10px; /* para que tenga espacio dentro de la celda*/
-    border: 1px solid #ccc;
-    text-align: center;
-    border: 1px solid #ccc;       /* Bordes visibles */
-  }
-td {
-    padding: 10px; /* para que tenga espacio dentro de la celda*/
-    border: 1px solid #ccc;
-    text-align: center;
-    border: 1px solid #ccc;       /* Bordes visibles */
-  }
 
-/*Encabezados*/
+/* body global */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f6e0e0cf;
+  color: #7C2D12;
+  padding: 05px;
+}
+
+/* MENU */
+nav {
+  background-color: #7C2D12;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Tabla */
+table {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Encabezados */
 header h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #7C2D12;
-  }
-  
-  h2, h3 {
-    color: #7C2D12;
-    margin: 20px 0 10px;
-  }
+  text-align: center;
+  margin-bottom: 10px;
+  color: #7C2D12;
+}
 
-  /* Footer */
+h2, h3 {
+  color: #7C2D12;
+  margin: 20px 0 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 40px;
@@ -87,19 +81,7 @@ footer {
   border-radius: 10px;
 }
 
-  /* parte responsive, replicar en todas las hojas*/
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    table, form {
-      width: 100%;
-    }
-  }
-
-
+/* Inputs y botón del formulario */
 .form-input {
   width: 100%;
   padding: 10px;
@@ -129,13 +111,38 @@ footer {
   background-color: #a3471b;
 }
 
-#responseMessage {
+#respuestamensaje {
   margin-top: 15px;
   font-weight: bold;
 }
 
-/* esto es para lo de claro oscuro*/
+/* Header y botones de modo */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
 
+#modo-toggle {
+  margin-top: 10px;
+}
+
+.modo-boton {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7C2D12;
+  color: white;
+  cursor: pointer;
+}
+
+.modo-boton:hover {
+  background-color: #a3471b;
+}
+
+/* Estilos para modo claro y oscuro */
 body.modo-claro {
   background-color: #f6e0e0cf;
   color: #7C2D12;
@@ -155,17 +162,36 @@ footer.modo-oscuro {
   color: #ccc;
 }
 
-.modo-boton {
-  margin: 5px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #7C2D12;
-  color: white;
-  cursor: pointer;
+/*responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table, form {
+    width: 100%;
+  }
+
+  #modo-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .modo-boton {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
-.modo-boton:hover {
-  background-color: #a3471b;
+.form-input, .form-button, textarea {
+  max-width: 100%;
+  box-sizing: border-box;
 }
-

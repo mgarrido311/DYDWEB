@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dias vividos</title>
+  <script>
+    window.onload = function() {
+      var nombre = prompt("Ingresa tu nombre:");
+      var apellido = prompt("Ingresa tu apellido:");
+      var fechaNacimiento = prompt("Ingresa tu fecha de nacimiento (formato AAAA-MM-DD):");
+
+      alert("Bienvenido " + nombre + " " + apellido);
+
+      //  calculo los dias
+      var fechaNac = new Date(fechaNacimiento);
+      var hoy = new Date();
+
+      var diferencia = hoy - fechaNac; 
+      var diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+      alert("Tus dias vividos son: " + diasVividos );
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
